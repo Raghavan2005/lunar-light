@@ -69,7 +69,7 @@ The **primaryColorScheme** variable can hold two values\_ `"light"`, `"dark"`. Y
 
 Both light & dark color schemes of AstroPaper theme can be customized. You can do this in `src/styles/base.css` file.
 
-```css
+css
 /* file: src/styles/base.css */
 @tailwind base;
 @tailwind components;
@@ -77,25 +77,16 @@ Both light & dark color schemes of AstroPaper theme can be customized. You can d
 
 @layer base {
   :root,
-  html[data-theme="light"] {
-    --color-fill: 251, 254, 251;
-    --color-text-base: 40, 39, 40;
-    --color-accent: 0, 108, 172;
-    --color-card: 230, 230, 230;
-    --color-card-muted: 205, 205, 205;
-    --color-border: 236, 233, 233;
-  }
-  html[data-theme="dark"] {
-    --color-fill: 47, 55, 65;
-    --color-text-base: 230, 230, 230;
-    --color-accent: 26, 217, 217;
-    --color-card: 63, 75, 90;
-    --color-card-muted: 89, 107, 129;
-    --color-border: 59, 70, 85;
-  }
-  /* other styles */
+html[data-theme="light"] {
+  --background: #f6eee1;
+  --foreground: #012c56;
+  --accent: #e14a39;
+  --muted: #efd8b0;
+  --border: #dc9891;
 }
-```
+ 
+}
+
 
 In AstroPaper theme, `:root` and `html[data-theme="light"]` selectors are used as the light color scheme and `html[data-theme="dark"]` is used the dark color scheme. If you want to customize your custom color scheme, you have to specify your light color scheme inside `:root`,`html[data-theme="light"]` and dark color scheme inside `html[data-theme="dark"]`.
 

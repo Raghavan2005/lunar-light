@@ -16,17 +16,28 @@ export const getStaticPaths = (async ({ paginate }) => {
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
----
 
+---
 <Layout title={`Posts | ${SITE.title}`}>
   <Header />
   <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
-    <ul>
-      {page.data.map(data => <Card {...data} />)}
+    <ul class="post-grid">
+      {page.data.map(data => (
+        <li><Card {...data} /></li>
+      ))}
     </ul>
   </Main>
-
   <Pagination {page} />
-
   <Footer noMarginTop={page.lastPage > 1} />
 </Layout>
+
+<style>
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+</style>
