@@ -27,19 +27,12 @@ export default defineConfig({
     },
   },
   image: {
-<<<<<<< Updated upstream
-    experimentalLayout: "constrained", // ✅ VALID if responsiveImages is true
-  },
-  experimental: {
-    responsiveImages: true, // ✅ Only enable what's valid
-=======
-    // Used for all Markdown images; not configurable per-image
-    // Used for all `<Image />` and `<Picture />` components unless overridden with a prop
-    experimentalLayout: "constrained",
-  },
-  experimental: {
-    responsiveImages: true,
-    preserveScriptOrder: true,
->>>>>>> Stashed changes
-  },
+  // Used for all Markdown images; not configurable per-image
+  // Used for all `<Image />` and `<Picture />` components unless overridden with a prop
+  experimentalLayout: "constrained",
+},
+experimental: {
+  responsiveImages: true,
+  preserveScriptOrder: true,
+},
 });
