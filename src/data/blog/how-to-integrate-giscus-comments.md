@@ -2,7 +2,7 @@
 author: FjellOverflow
 pubDatetime: 2024-07-25T11:11:53Z
 modDatetime: 2025-03-12T12:28:53Z
-title: How to integrate Giscus comments into AstroPaper
+title: How to integrate Giscus comments into LunarLight
 slug: how-to-integrate-giscus-comments
 featured: false
 draft: false

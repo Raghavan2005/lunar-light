@@ -2,17 +2,17 @@
 author: Sat Naing
 pubDatetime: 2022-09-23T04:58:53Z
 modDatetime: 2025-03-20T03:15:57.792Z
-title: How to configure AstroPaper theme
+title: How to configure LunarLight theme
 slug: how-to-configure-astropaper-theme
 featured: true
 draft: false
 tags:
   - configuration
   - docs
-description: How you can make AstroPaper theme absolutely yours.
+description: How you can make LunarLight theme absolutely yours.
 ---
 
-AstroPaper is a highly customizable Astro blog theme. With AstroPaper, you can customize everything according to your personal taste. This article will explain how you can make some customizations easily in the config file.
+LunarLight is a highly customizable Astro blog theme. With LunarLight, you can customize everything according to your personal taste. This article will explain how you can make some customizations easily in the config file.
 
 ## Table of contents
 
@@ -29,7 +29,7 @@ export const SITE = {
   author: "Sat Naing",
   profile: "https://satnaing.dev/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  title: "LunarLight",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -71,9 +71,9 @@ Here are SITE configuration options
 
 ## Configuring logo or title
 
-Prior to AstroPaper v5, you can update your site name/logo in `LOGO_IMAGE` object inside `src/config.ts` file. However, in AstroPaper v5, this option has been removed in favor of Astro's built-in SVG and Image components.
+Prior to LunarLight v5, you can update your site name/logo in `LOGO_IMAGE` object inside `src/config.ts` file. However, in LunarLight v5, this option has been removed in favor of Astro's built-in SVG and Image components.
 
-![An arrow pointing at the website logo](https://res.cloudinary.com/noezectz/v1663911318/astro-paper/AstroPaper-logo-config_goff5l.png)
+![An arrow pointing at the website logo](https://res.cloudinary.com/noezectz/v1663911318/astro-paper/LunarLight-logo-config_goff5l.png)
 
 There are 3 options you can do:
 

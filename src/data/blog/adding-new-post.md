@@ -2,18 +2,18 @@
 author: Sat Naing
 pubDatetime: 2022-09-23T15:22:00Z
 modDatetime: 2025-03-22T06:25:46.734Z
-title: Adding new posts in AstroPaper theme
+title: Adding new posts in LunarLight theme
 slug: adding-new-posts-in-astropaper-theme
 featured: true
 draft: false
 tags:
   - docs
 description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
+  Some rules & recommendations for creating or adding new posts using LunarLight
   theme.
 ---
 
-Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+Here are some rules/recommendations, tips & ticks for creating new posts in LunarLight blog theme.
 
 <figure>
   <img
@@ -31,9 +31,9 @@ Here are some rules/recommendations, tips & ticks for creating new posts in Astr
 
 To write a new blog post, create a markdown file inside the `src/data/blog/` directory.
 
-> Prior to AstroPaper v5.1.0, all blog posts had to be in `src/data/blog/`, meaning you couldn't organize them into subdirectories.
+> Prior to LunarLight v5.1.0, all blog posts had to be in `src/data/blog/`, meaning you couldn't organize them into subdirectories.
 
-Starting from AstroPaper v5.1.0, you can now organize blog posts into subdirectories, making it easier to manage your content.
+Starting from LunarLight v5.1.0, you can now organize blog posts into subdirectories, making it easier to manage your content.
 
 For example, if you want to group posts under `2025`, you can place them in `src/data/blog/2025/`. This also affects the post URL, so `src/data/blog/2025/example-post.md` will be available at `/posts/2025/example-post`.
 
@@ -78,7 +78,7 @@ Here is the list of frontmatter property for each post.
 
 Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
 
-Title and description (excerpt) are important for search engine optimization (SEO) and thus AstroPaper encourages to include these in blog posts.
+Title and description (excerpt) are important for search engine optimization (SEO) and thus LunarLight encourages to include these in blog posts.
 
 `slug` is the unique identifier of the url. Thus, `slug` must be unique and different from other posts. The whitespace of `slug` should to be separated with `-` or `_` but `-` is recommended. Slug is automatically generated using the blog post file name. However, you can define your `slug` as a frontmatter in your blog post.
 
@@ -133,7 +133,7 @@ For instance, if you want to place your table of contents just under the intro p
 # some frontmatter
 ---
 
-Here are some recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+Here are some recommendations, tips & ticks for creating new posts in LunarLight blog theme.
 
 ## Table of contents
 
@@ -142,7 +142,7 @@ Here are some recommendations, tips & ticks for creating new posts in AstroPaper
 
 ## Headings
 
-There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
+There's one thing to note about headings. The LunarLight blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
 
 This rule is not mandatory, but highly recommended for visual, accessibility and SEO purposes.
 
@@ -205,4 +205,4 @@ My recommendation for image compression sites.
 
 The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
 
-> Since AstroPaper v1.4.0, OG images will be generated automatically if not specified. Check out [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).
+> Since LunarLight v1.4.0, OG images will be generated automatically if not specified. Check out [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).
